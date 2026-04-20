@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме - Даніела Чавес Гонсалес</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+
+<body>
+
+<button id="theme-switch">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+</button>
+
+<div class="container">
+    <aside class="sidebar">
+
+        <div class="photo">
+            <img src="2c47d5dd5b532f83bb55c4cd6f5bd1ef.jpg">
+        </div>
+
+        <section class="section">
+            <h3>Особисті дані</h3>
+            <p><strong>Ім’я</strong><br>Даніела Чавес Гонсалес</p>
+            <p><strong>Адреса</strong><br>м. Львів</p>
+            <p><strong>Номер телефону</strong><br>+3801234567</p>
+            <p><strong>Електронна адреса</strong><br>daniela@example.com</p>
+            <p><strong>Дата народження</strong><br>04.11.2005</p>
+        </section>
+
+        <section class="section">
+            <h3>Навички</h3>
+                <p>OSINT</p>
+                <p>Управління базами даних (SQL)</p>
+                <p>Фронтенд розробка (HTML/CSS)</p>
+                <p>Веб-дизайн</p>
+                <p>Графічний дизайн</p>
+        </section>
+
+        <section class="section">
+            <h3>Мови</h3>
+            <p>Англійська <span class="level">B2+</span></p>
+            <p>Іспанська <span class="level">A1</span></p>
+            <p>Українська <span class="level">Рідна мова</span></p>
+        </section>
+
+    </aside>
+
+
+    <main class="content">
+
+        <header>
+            <h1>Даніела Чавес Гонсалес</h1>
+            <h2>Студентка</h2>
+        </header>
+
+        <section>
+            <h3>Про себе</h3>
+            <p>
+                Студентка 3 курсу управління інформаційною безпекою. 
+                Маю теоретичні та практичні знання у сфері кібербезпеки, здобуті під час навчання. 
+                Шукаю посаду, де зможу застосувати свої навички та розвиватися в професії. 
+                Готова швидко вчитися, відповідальна та націлена на результат.
+            </p>
+        </section>
+
+        <section>
+            <h3>Освіта</h3>
+            <div class="education-item">
+                <div class="education-header">
+                    <strong>Бакалавр</strong>
+                    <span>2023 - 2027</span>
+                </div>
+                <p>Національний університет "Львівська Політехніка"</p>
+                <p>Кібербезпека</p>
+                <p>Управління інформаційною безпекою</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Додаткова освіта</h3>
+                <p>Всеукраїнське змагання та навчальний інтенсив "She Defends: Cyber & OSINT"</p>
+                <p>Проєкт відкритих онлайн-курсів Prometheus</p>
+                <p>Курс "Безпека в інтернеті під час війни: практичний курс"</p>
+                <p>Онлайн-платформа для навчання Udemy</p>
+                <p>Курс "Learn Python 3.14"</p>
+        </section>
+
+    </main>
+
+</div>
+
+
+<div class="footer-bar">
+</div>
+<script src="os_info.js"></script>
+
+
+<button id="openModalBtn">Читати відгуки</button>
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            
+            <div class="comments-container">
+                <h3>Відгуки попередніх роботодавців</h3>
+                <div id="loader">Завантаження...</div>
+                <ul id="comments-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="comments.js"></script>
+
+
+<div id="feedbackModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">&times;</span>
+        <h2>Зворотній зв'язок</h2>
+        <form action="https://formspree.io/f/xojkozbn" method="POST">
+            <label>Ім’я:</label>
+            <input type="text" name="name" required>
+            
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            
+            <label>Номер телефону:</label>
+            <input type="tel" name="phone">
+            
+            <label>Повідомлення:</label>
+            <textarea name="message" required></textarea>
+            
+            <button type="submit" class="submitBtn">Відправити</button>
+        </form>
+    </div>
+</div>
+<script src="feedback.js"></script>
+
+
+</body>
+
+</html>
